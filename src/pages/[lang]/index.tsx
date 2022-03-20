@@ -5,7 +5,6 @@ import cx from 'classnames';
 import tagWrapper from 'src/utils/tagWrapper';
 import { defaultLocale, locales } from 'src/localization';
 
-import ProductButton from 'src/components/ProductButton';
 import Button from 'src/components/Button';
 import Icon from 'src/components/Icon';
 import Header from 'src/components/Header';
@@ -57,7 +56,6 @@ const PageHome = () => {
               alt={formatMessage({ id: 'landing.imageAltText' })}
             />
           </div>
-          <ProductButton />
         </div>
 
         <Section
@@ -111,32 +109,6 @@ const PageHome = () => {
             </a>
           )}
         />
-        <div className={cx('row', styles.OurSponsors)}>
-          <h3 className={styles.OurSponsorsTitle}>
-            <FormattedMessage id="general.ourSponsors" />
-          </h3>
-          <a
-            href="https://ahrefs.com/?utm_source=regexlearn&utm_medium=referral&utm_campaign=sponsorship"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src="/ahrefs.webp" alt="ahrefs" />
-          </a>
-          <a
-            href="https://sitechecker.pro/?utm_source=regexlearn&utm_medium=referral&utm_campaign=sponsorship"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src="/sitechecker.pro.webp" alt="sitechecker.pro" />
-          </a>
-          <a
-            href="https://seo.do/?utm_source=regexlearn&utm_medium=referral&utm_campaign=sponsorship"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src="/seo.do.webp" alt="seo.do" />
-          </a>
-        </div>
       </div>
       <Footer />
     </>
