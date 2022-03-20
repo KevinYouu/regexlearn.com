@@ -22,7 +22,7 @@ interface Props {
 const LearnFooter = ({ steps, step, nextStep, prevStep, success, error }: Props) => (
   <div className={cx(styles.LearnFooter, 'container-fluid')}>
     <div className={cx(styles.LearnFooterRow, 'row')}>
-      <div className={cx(styles.LearnFooterPrevWrapper, 'col-xs-4')}>
+      <div className={cx(styles.LearnFooterPrevWrapper, 'col-xs-6')}>
         {step > 0 && (
           <div className={styles.NavigationStepPrev} role="button" tabIndex={0} onClick={prevStep}>
             <Shortcut command={shortcuts.prevStep} />
@@ -33,10 +33,7 @@ const LearnFooter = ({ steps, step, nextStep, prevStep, success, error }: Props)
           </div>
         )}
       </div>
-      <div className={cx(styles.LearnFooterSocialWrapper, 'col-xs-4')}>
-        <Social />
-      </div>
-      <div className={cx(styles.LearnFooterNextWrapper, 'col-xs-4')}>
+      <div className={cx(styles.LearnFooterNextWrapper, 'col-xs-6')}>
         {step < steps.length - 1 && (
           <div className={styles.NavigationStepNext} role="button" tabIndex={0} onClick={nextStep}>
             <div className={styles.NavigationStepNextWrapper}>
