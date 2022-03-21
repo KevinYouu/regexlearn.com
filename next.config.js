@@ -2,7 +2,7 @@
 
 module.exports = {
   reactStrictMode: true,
-  async rewrites() {
+  async rewrites () {
     return [
       {
         source: '/',
@@ -26,7 +26,7 @@ module.exports = {
       },
     ]
   },
-  async redirects() {
+  async redirects () {
     return [
       {
         source: '/en',
