@@ -1,13 +1,13 @@
-FROM node:lts-alpine
+FROM node:lts-alpine as build
 
+RUN apk add --no-cache yarn
 WORKDIR /app
 ADD . /app/
 COPY . .
 
-ENV HOST 0.0.0.0
-EXPOSE 3000
+RUN yarn && yarn build
 
-RUN npm install && \
-    npm run build
-
-CMD ["npm", "run", "start"]
+FROM node:lts-alpine
+WORKDIR /app
+COPY --from=build /app /app
+CMD ["yarn", "start"]
