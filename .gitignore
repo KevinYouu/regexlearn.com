@@ -59,7 +59,6 @@ coverage
 *.scss.map
 Thumbs.db
 db.json
-public/
 node_modules/
 .deploy*/%
 .vuepress/dist
