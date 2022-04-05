@@ -1,163 +1,163 @@
 {
-  "examples.starter.title": "Practice",
-  "examples.starter.description": "Now it's time to do some practice to consolidate what we've learned.",
+  "examples.starter.title": "练习",
+  "examples.starter.description": "现在是时候做一些练习来巩固我们学到的知识了。",
 
-  "examples.finish.title": "Practice completed!",
+  "examples.finish.title": "练习已完成！",
   "examples.finish.description": " ",
 
-  "steps.starter.title": "Intro",
-  "steps.starter.description": "Regex is short for `Regular Expression`. It helps to match, find or manage text. Start by typing `OK` in the Regex field to proceed to the first step and access the more detailed description..",
+  "steps.starter.title": "介绍",
+  "steps.starter.description": "Regex 是正则表达式（Regular Expression）的简称。它便于匹配、查找和管理文本。请在输入框中键入 `OK`，开始第一步以了解更多的细节。",
 
-  "steps.whatIsRegex.title": "What is Regular Expressions `Regex`?",
-  "steps.whatIsRegex.description": "Regular Expressions are a string of characters that express a search pattern. Often abbreviated as `Regex` or `Regexp`. It is especially used to find or replace words in texts. In addition, we can test whether a text complies with the rules we set.\\n\\n For example, let's say you have a list of filenames. And you only want to find files with the `pdf` extension. Following typing an expression `^\\w+\\.pdf$` will work. The meaning of the definitions in this expression will become clearer as the steps progress.",
+  "steps.whatIsRegex.title": "什么是「正则表达式」？",
+  "steps.whatIsRegex.description": "正则表达式是表示搜索模式的字符串，常缩写成 `Regex` 或 `Regexp`。它常用于查找和替换文本中的字词。此外，我们可以测试文本是否符合我们设置的规则。\\n\\n 例如，您只想查找文件名列表中，扩展名是 `pdf` 的文件，那您只需跟着输入 `^\\w+\\.pdf$` 就可以找到。随着课程的进行，表达式的含义会变得更加清晰。",
 
-  "steps.basicMatchers.title": "Basic Matchers",
-  "steps.basicMatchers.description": "The character or word we want to find is written directly. It is similar to a normal search process. For example, to find the word `curious` in the text, type the same.",
+  "steps.basicMatchers.title": "基本匹配",
+  "steps.basicMatchers.description": "我们想要查找的字符或单词可以直接输入，就像搜索一样。例如，要找出文本中的 `curious` 一词，只需输入同样的内容。",
 
-  "steps.dotCharacter.title": "Dot `.`: Any Character",
-  "steps.dotCharacter.description": "The period `.` allows selecting any character, including special characters and spaces.",
+  "steps.dotCharacter.title": "点 `.`：任何字符",
+  "steps.dotCharacter.description": "`.` 允许匹配任何字符，包括特殊字符和空格。",
 
-  "steps.characterSet.title": "Character Sets `[abc]`",
-  "steps.characterSet.description": "If one of the characters in a word can be various characters, we write it in square brackets `[]` with all alternative characters. For example, to write an expression that can find all the words in the text, type the characters `a`, `e`, `i`, `o`, `u` adjacently within square brackets `[]`.",
+  "steps.characterSet.title": "字符集 `[abc]`",
+  "steps.characterSet.description": "如果一个词中的字符可以是各种字符，我们就将所有的可选字符写进中括号 `[]` 中。例如，为了查找文本中的所有单词，我们需要编写表达式，在 `[]` 中相邻地输入字符 `a`、`e`、`i`、`o`、`u`。",
 
-  "steps.negatedCharacterSet.title": "Negated Character Sets `[^abc]`",
-  "steps.negatedCharacterSet.description": "To find all words in the text below, except for `ber` and `bor`, type `e` and `o` side by side after the caret `^` character inside square brackets `[]`.",
+  "steps.negatedCharacterSet.title": "否定字符集 `[^abc]`",
+  "steps.negatedCharacterSet.description": "为了查找下方文本的所有单词（`ber` 和 `bor` 除外），请在 `[]` 中的 `^` 后面并排输入 `e` 和 `o`。",
 
-  "steps.range.title": "Letter Range`[a-z]`",
-  "steps.range.description": "To find the letters in the specified range, the starting letter and the ending letter are written in square brackets `[]` with a dash between them `-`. It is case-sensitive. Type the expression that will select all lowercase letters between `e` and `o`, including themselves.",
+  "steps.range.title": "字母范围 `[a-z]`",
+  "steps.range.description": "为了查找指定范围的字母，我们需要将起始字母和结束字母写进 `[]` 中，中间用连字符 `-` 分隔。它区分大小写。请编写表达式，匹配 `e` 和 `o` 之间所有的小写字母，包括它们本身。",
 
-  "steps.rangeNumber.title": "Number Range`[0-9]`",
-  "steps.rangeNumber.description": "To find the numbers in the specified range, the starting number and the ending number are written in square brackets `[]` with a dash `-` between them. Write an expression that will select all numbers between `3` and `6`, including themselves.",
+  "steps.rangeNumber.title": "数字范围 `[0-9]`",
+  "steps.rangeNumber.description": "为了查找指定范围的数字，我们需要在 `[]` 中输入起始和结束数字，中间用连字符 `-` 分隔。请编写表达式，匹配 `3` 到 `6` 之间的所有数字，包括它们本身。",
 
-  "examples.basicMatchers.title": "Practice: Basic Matcher",
-  "examples.basicMatchers.description": "Write the expression that will select the words `of` in the text.",
+  "examples.basicMatchers.title": "练习：基本匹配",
+  "examples.basicMatchers.description": "请编写表达式，匹配文本中的单词 `of`。",
 
-  "examples.dotCharacter.title": "Practice: Any Character",
-  "examples.dotCharacter.description": "Type the expression to select individual letters, numbers, spaces, and special characters in the text. The expression you type must match any character.",
+  "examples.dotCharacter.title": "练习：匹配任意字符",
+  "examples.dotCharacter.description": "请编写表达式，匹配文本中所有字母、数字、空格和特殊字符。表达式必须匹配任何字符。",
 
-  "examples.characterSet.title": "Practice: Character Sets",
-  "examples.characterSet.description": "Write the phrase that matches each word in the text. The only characters that change are the initials of the words.",
+  "examples.characterSet.title": "练习：字符集",
+  "examples.characterSet.description": "写出匹配文本中所有单词的表达式。单词首字母是唯一变化的字符。",
 
-  "examples.negatedCharacterSet.title": "Practice: Negated Character Sets",
-  "examples.negatedCharacterSet.description": "Write down the expression that will match anything other than the words `beor` and `beur` in the text. Do this using the negated character set.",
+  "examples.negatedCharacterSet.title": "练习：否定字符集",
+  "examples.negatedCharacterSet.description": "请编写表达式，匹配除 `beor` 和 `beur` 以外的所有单词。要求使用否定字符集完成。",
 
-  "examples.range.title": "Practice: Letter Range",
-  "examples.range.description": "Write the expression that will select the letters from `g` to `k` in the text.\\n`g` and `k` letters should also be included in this range.",
+  "examples.range.title": "练习：字母范围",
+  "examples.range.description": "请编写表达式，匹配 `g` 到 `k` 之间的所有字母，包括它们本身。",
 
-  "examples.rangeNumber.title": "Practice: Number Range",
-  "examples.rangeNumber.description": "Type an expression to select numbers from `2` to `7` in the text.\\n`2` and `7` should also be included in this range.",
+  "examples.rangeNumber.title": "练习：数字范围",
+  "examples.rangeNumber.description": "请编写表达式，匹配 `2` 到 `7` 之间的所有数字，包括它们本身。",
 
-  "steps.repetitions.title": "Repetitions",
-  "steps.repetitions.description": "Some special characters are used to specify how many times a character will be repeated in the text. These special characters are the plus `+`, the asterisk `*`, and the question mark `?`.",
+  "steps.repetitions.title": "重复",
+  "steps.repetitions.description": "一些特殊字符用来指定一个字符在文本中重复的次数。它们分别是加号 `+`、星号 `*` 和问号 `?`。",
 
-  "steps.asterisk.title": "Asterisk `*`",
-  "steps.asterisk.description": "We put an asterisk `*` after a character to indicate that the character may either not match at all or can match many times. For example, indicate that the letter `e` should never occur in the text, or it can occur once or more side by side.",
+  "steps.asterisk.title": "星号 `*`",
+  "steps.asterisk.description": "我们在字符后面加上 `*`，表示一个字符完全不匹配或可以匹配多次。例如，表示字母 `e` 在下方文本中不出现，只出现 `1` 次或者并排出现多次。",
 
-  "steps.plusCharacter.title": "Plus Sign `+`",
-  "steps.plusCharacter.description": "To indicate that a character can occur one or more times, we put a plus sign `+` after a character. For example, indicate that the letter `e` can occur one or more times in the text.",
+  "steps.plusCharacter.title": "加号 `+`",
+  "steps.plusCharacter.description": "为了表示一个字符可以出现一次或多次，我们将 `+` 放在它后面。例如，表示 `e` 在下方文本中出现一次或多次。",
 
-  "steps.questionMark.title": "Question Mark `?`",
-  "steps.questionMark.description": "To indicate that a character is optional, we put a `?` question mark after a character. For example, indicate that the following letter `u` is optional.",
+  "steps.questionMark.title": "问号 `?`",
+  "steps.questionMark.description": "为了表示一个字符是可选的，我们在它后面加一个 `?`。例如，表示下方文本中的字母 `u` 是可选的。",
 
-  "steps.quantifier.title": "Curly Braces - 1",
-  "steps.quantifier.description": "To express a certain number of occurrences of a character, we write curly braces `{n}` along with how many times we want it to occur at the end. For example, indicate that the following letter `e` can occur only `2` times.",
+  "steps.quantifier.title": "大括号 - 1",
+  "steps.quantifier.description": "为了表示一个字符出现的确切次数，我们在该字符的末尾，将它出现的次数写进大括号 `{}` 中，如 `{n}`。例如，表示下方文本中的字母 `e` 只能出现 `2` 次。",
 
-  "steps.quantifierMin.title": "Curly Braces - 2",
-  "steps.quantifierMin.description": "To express at least a certain number of occurrences of a character, we write the end of the character at least how many times we want it to occur, with a comma `,` at the end, and inside curly braces `{n, }`. For example, indicate that the following letter `e` can occur at least `3` times.",
+  "steps.quantifierMin.title": "大括号 - 2",
+  "steps.quantifierMin.description": "为了表示一个字符至少出现多少次，我们在该字符的末尾，将它至少应出现的次数写进大括号 `{}` 中，并在数字后面加上逗号 `,`，如 `{n, }`。例如，表示下方文本中的字母 `e` 至少出现 `3` 次。",
 
-  "steps.quantifierRange.title": "Curly Braces - 3",
-  "steps.quantifierRange.description": "To express the occurrence of a character in a certain number range, we write curly braces `{x,y}` with the interval we want to go to the end. For example, indicate that the following letter `e` can only occur between `1` and `3`.",
+  "steps.quantifierRange.title": "大括号 - 3",
+  "steps.quantifierRange.description": "为了表示一些字符出现的次数在某个数字范围内，我们在该字符的末尾，将它至少和至多出现的次数写进大括号 `{}` 中，中间用逗号 `,` 分隔，如 `{x,y}`。例如，匹配下方文本中，字母 `e` 出现 `1` 至 `3` 次的单词。",
 
-  "examples.asterisk.title": "Practice: Asterisk `*`",
-  "examples.asterisk.description": "Use the asterisk `*` to write the expression that will select each word, suitable for the absence of the letter `e` in the text and the presence of one or more.",
+  "examples.asterisk.title": "练习：星号 `*`",
+  "examples.asterisk.description": "请编写表达式，用 `*` 匹配下方文本中，没有或存在多个字母 `e` 的单词。",
 
-  "examples.plusCharacter.title": "Practice: Plus Sign `+`",
-  "examples.plusCharacter.description": "Write the expression using the plus sign `+` to select words in which the letter `e` occurs one or more times in the text.",
+  "examples.plusCharacter.title": "练习：加号 `+`",
+  "examples.plusCharacter.description": "请编写表达式，用 `+` 匹配下方文本中，字母 `e` 出现一次或多次的单词。",
 
-  "examples.questionMark.title": "Practice: Question Mark `?`",
-  "examples.questionMark.description": "Write the expression indicating that the letter `n` is optional in the text, using the question mark `?`. Thus, both the words `a` and `an` can be selected.",
+  "examples.questionMark.title": "练习：问号 `?`",
+  "examples.questionMark.description": "请编写表达式，用 `?` 表示字母 `n` 在文本中是可选的，使 `a` 和 `an` 都可以匹配到。",
 
-  "examples.quantifier.title": "Practice: Curly Braces - 1",
-  "examples.quantifier.description": "Write the expression using curly braces `{}` that will find texts containing `4` numbers side by side.",
+  "examples.quantifier.title": "练习：大括号 - 1",
+  "examples.quantifier.description": "用 `{}` 编写表达式，匹配文本中的 `4` 位阿拉伯数字。",
 
-  "examples.quantifierMin.title": "Practice: Curly Braces - 2",
-  "examples.quantifierMin.description": "Write the expression using curly braces `{}` that will find texts containing at least `2` numbers side by side.",
+  "examples.quantifierMin.title": "练习：大括号 - 2",
+  "examples.quantifierMin.description": "用 `{}` 编写表达式，匹配文本中，位数至少为 `2` 的阿拉伯数字。",
 
-  "examples.quantifierRange.title": "Practice: Curly Braces - 3",
-  "examples.quantifierRange.description": "Write the expression using curly braces `{}` that will find texts containing at least `1` and at most `4` numbers side by side.",
+  "examples.quantifierRange.title": "练习：大括号 - 3",
+  "examples.quantifierRange.description": "用 `{}` 编写表达式，匹配文本中，位数为 `1` 至 `4` 的阿拉伯数字。",
 
-  "steps.groupping.title": "Parentheses `( )`: Grouping",
-  "steps.groupping.description": "We can group an expression and use these groups to reference or enforce some rules. To group an expression, we enclose `()` in parentheses. For now just group `haa` below.",
+  "steps.groupping.title": "括号 `( )`: 分组",
+  "steps.groupping.description": "我们可以对一个表达式进行分组，并用这些分组来引用或执行一些规则。为了给表达式分组，我们需要将文本包裹在 `()` 中。现在，请尝试为下方文本中的 `haa` 构造分组。",
 
-  "steps.groupReference.title": "Referencing a Group",
-  "steps.groupReference.description": "The words `ha` and `haa` are grouped below. The first group is used by writing `\\1` to avoid rewriting. Here `1` denotes the order of grouping. Type `\\2` at the end of the expression to refer to the second group.",
+  "steps.groupReference.title": "引用组",
+  "steps.groupReference.description": "单词 `ha` 和 `haa` 分组如下。第一组用 `\\1` 来避免重复书写。这里的 `1` 表示分组的顺序。请在表达式的末尾键入 `\\2` 以引用第二组。",
 
-  "steps.nonCapturingGroupping.title": "Parentheses `(?: )`: Non-capturing Grouping",
-  "steps.nonCapturingGroupping.description": "You can group an expression and ensure that it is not captured by references. For example, below are two groups. However, the first group reference we denote with `\\1` actually indicates the second group, as the first is a non-capturing group.",
+  "steps.nonCapturingGroupping.title": "括号 `(?: )`: 非捕获分组",
+  "steps.nonCapturingGroupping.description": "您可以对表达式进行分组，并确保它不被引用捕获。例如，下面有两个分组，但我们用 `\\1` 引用的第一个组实际上是指向第二个组，因为第一个是未被捕获的分组。",
 
-  "steps.pipeCharacter.title": "Pipe Character `|`",
-  "steps.pipeCharacter.description": "It allows to specify that an expression can be in different expressions. Thus, all possible statements are written separated by the pipe sign `|`. This differs from charset `[abc]`, charsets operate at the character level. Alternatives are at the expression level. For example, the following expression would select both `cat` and `Cat`. Add another pipe sign `|` to the end of the expression and type `rat` so that all words are selected.",
+  "steps.pipeCharacter.title": "竖线 `|`",
+  "steps.pipeCharacter.description": "竖线允许一个表达式包含多个不同的分支。所有分支用 `|` 分隔。和在字符层面上运作的字符集 `[abc]` 不同，分支在表达式层面上运作。例如，下面的表达式同时匹配 `cat` 和 `Cat`。请在末尾添加另一个 `|`，并输入 `rat` 以匹配所有单词。",
 
-  "steps.escapeCharacter.title": "Escape Character `\\`",
-  "steps.escapeCharacter.description": "There are special characters that we use when writing regex. `{ } [ ] / \\ + * . $^ | ?` Before we can select these characters themselves, we need to use an escape character `\\`. For example, to select the dot `.` and asterisk `*` characters in the text, let's add an escape character `\\` before it.",
+  "steps.escapeCharacter.title": "转义字符 `\\`",
+  "steps.escapeCharacter.description": "在书写正则表达式时，我们会用到 `{ } [ ] / \\ + * . $^ | ?` 这些特殊字符 。为了匹配这些特殊字符本身，我们需要通过 `\\` 将它们转义。例如，要匹配文本中的 `.` 和 `*`，我们需要在它们前面添加一个 `\\`。",
 
-  "steps.caret.title": "Caret Sign `^`:\\nSelecting by Line Start",
-  "steps.caret.description": "We were using `[0-9]` to find numbers. To find only numbers at the beginning of a line, prefix this expression with the `^` sign.",
+  "steps.caret.title": "插入符 `^`:\\n匹配字符串的开始",
+  "steps.caret.description": "我们用 `[0-9]` 查找数字，若仅查找行首的数字，请在表达式前面加上 `^`。",
 
-  "steps.dollar.title": "Dollar Sign `$`:\\nSelecting by End of Line",
-  "steps.dollar.description": "Let's use the `$` sign after the `html` value to find the `html` texts only at the end of the line.",
+  "steps.dollar.title": "美元符号 `$`:\\n匹配字符串的结束",
+  "steps.dollar.description": "让我们在 `html` 的后面添加 `$`，来查找仅在行末出现的 `html`。",
 
-  "steps.wordCharacter.title": "Word Character `\\w`: Letter, Number and Underscore",
-  "steps.wordCharacter.description": "The expression `\\w` is used to find letters, numbers and underscore characters. Let's use the expression `\\w` to find word characters in the text.",
+  "steps.wordCharacter.title": "单词字符 `\\w`: 字母、数字和下划线",
+  "steps.wordCharacter.description": "表达式 `\\w` 用于查找字母、数字和下划线。让我们用表达式 `\\w` 来查找文本中的单词字符。",
 
-  "steps.withoutWordCharacter.title": "Except Word Character `\\W`",
-  "steps.withoutWordCharacter.description": "The expression `\\W` is used to find characters other than letters, numbers, and underscores.",
+  "steps.withoutWordCharacter.title": "非单词字符 `\\W`",
+  "steps.withoutWordCharacter.description": "`\\W` 匹配除字母、数字和下划线之外的字符。",
 
-  "steps.numberCharacter.title": "Number Character `\\d`",
-  "steps.numberCharacter.description": "`\\d` is used to find only number characters.",
+  "steps.numberCharacter.title": "数字字符 `\\d`",
+  "steps.numberCharacter.description": "`\\d` 仅用来匹配数字。",
 
-  "steps.withoutNumberCharacter.title": "Except Number Character `\\D`",
-  "steps.withoutNumberCharacter.description": "`\\D` is used to find non-numeric characters.",
+  "steps.withoutNumberCharacter.title": "非数字字符 `\\D`",
+  "steps.withoutNumberCharacter.description": "`\\D` 匹配除数字之外的字符。",
 
-  "steps.spaceCharacter.title": "Space Character `\\s`",
-  "steps.spaceCharacter.description": "`\\s` is used to find only space characters.",
+  "steps.spaceCharacter.title": "空白符 `\\s`",
+  "steps.spaceCharacter.description": "`\\s` 仅匹配空白字符。",
 
-  "steps.withoutSpaceCharacter.title": "Except Space Character `\\S`",
-  "steps.withoutSpaceCharacter.description": "`\\S` is used to find non-space characters.",
+  "steps.withoutSpaceCharacter.title": "非空白符 `\\S`",
+  "steps.withoutSpaceCharacter.description": "`\\S` 匹配除空白符之外的字符。",
 
-  "steps.lookarounds.title": "Lookarounds",
-  "steps.lookarounds.description": "If we want the phrase we're writing to come before or after another phrase, we need to \"lookaround\". Take the next step to learn how to \"lookaround\".",
+  "steps.lookarounds.title": "零宽断言",
+  "steps.lookarounds.description": "如果我们希望正在写的词语出现在另一个词语之前或之后，我们需要使用「零宽断言」。请前往下一步骤，学习如何使用「零宽断言」。",
 
-  "steps.positiveLookahead.title": "Positive Lookahead: `(?=)`",
-  "steps.positiveLookahead.description": "For example, we want to select the hour value in the text. Therefore, to select only the numerical values that have `PM` after them, we need to write the positive look-ahead expression `(?=)` after our expression. Include `PM` after the `=` sign inside the parentheses.",
+  "steps.positiveLookahead.title": "正向先行断言: `(?=)`",
+  "steps.positiveLookahead.description": "例如，我们要匹配文本中的小时值。为了只匹配后面有 `PM` 的数值，我们需要在表达式后面使用正向先行断言 `(?=)`，并在括号内的 `=` 后面添加 `PM`。",
 
-  "steps.negativeLookahead.title": "Negative Lookahead: `(?!)`",
-  "steps.negativeLookahead.description": "For example, we want to select numbers other than the hour value in the text. Therefore, we need to write the negative look-ahead `(?!)` expression after our expression to select only the numerical values that do not have `PM` after them. Include `PM` after the `!` sign inside the parentheses.",
-  
-  "steps.positiveLookbehind.title": "Positive Lookbehind: `(?<=)`",
-  "steps.positiveLookbehind.description": "For example, we want to select the price value in the text. Therefore, to select only the number values that preceded by `$`, we need to write the positive lookbehind expression `(?<=)` before our expression. Add `\\$` after the `=` sign inside the brackets.",
+  "steps.negativeLookahead.title": "负向先行断言: `(?!)`",
+  "steps.negativeLookahead.description": "例如，我们要在文本中匹配除小时值以外的数字。我们需要在表达式后面使用负向先行断言 `(?!)`，并在括号内的 `!` 后面添加 `PM`，从而只匹配没有 `PM` 的数值。",
 
-  "steps.negativeLookbehind.title": "Negative Lookbehind: `(?&lt;!)`",
-  "steps.negativeLookbehind.description": "For example, we want to select numbers in the text other than the price value. Therefore, to select only numeric values that are not preceded by `$`, we need to write the negative lookbehind `(?&lt;!)` before our expression. Add `\\$` after the `!` inside the brackets.",
+  "steps.positiveLookbehind.title": "正向后行断言: `(?<=)`",
+  "steps.positiveLookbehind.description": "例如，我们要匹配文本中的金额数。为了只匹配前面带有 `$` 的数字。我们要在表达式前面使用正向后行断言 `(?<=)`，并在括号内的 `=` 后面添加 `\\$`。",
 
-  "steps.flags.title": "Flags",
-  "steps.flags.description": "Flags change the output of the expression. That's why flags are also called `modifiers`. Determines whether the typed expression treats text as separate lines, is case sensitive, or finds all matches. Continue to the next step to learn the flags.",
+  "steps.negativeLookbehind.title": "负向后行断言: `(?&lt;!)`",
+  "steps.negativeLookbehind.description": "例如，我们要在文本中匹配除价格外的数字。为了只匹配前面没有 `$` 的数字，我们要在表达式前用负向后行断言 `(?&lt;!)`，并在括号内的 `!` 后面添加 `\\$`。",
 
-  "steps.flagsGlobal.title": "Global Flag",
-  "steps.flagsGlobal.description": "The `global` flag causes the expression to select all matches. If not used it will only select the first match. Now enable the `global` flag to be able to select all matches.",
+  "steps.flags.title": "标志",
+  "steps.flags.description": "标志改变表达式的输出。这就是标志也称为 `修饰符` 的原因。标志决定表达式是否将文本视作单独的行处理，是否区分大小写，或者是否查找所有匹配项。请继续下一步步骤以学习标志。",
 
-  "steps.flagsMultiline.title": "Multiline Flag",
-  "steps.flagsMultiline.description": "Regex sees all text as one line. But we use the `multiline` flag to handle each line separately. In this way, the expressions we write according to the end of the linework separately for each line. Now enable the `multiline` flag to find all matches.",
+  "steps.flagsGlobal.title": "全局标志",
+  "steps.flagsGlobal.description": "全局标志使表达式选中所有匹配项，如果不启用全局标志，那么表达式只会匹配第一个匹配项。现在，请启用全局标志，以便匹配所有匹配项。",
 
-  "steps.flagsCaseInsensitive.title": "Case-insensitive Flag",
-  "steps.flagsCaseInsensitive.description": "In order to remove the case-sensitiveness of the expression we have written, we must activate the `case-insensitive` flag.",
-  
-  "steps.greedyMatching.title": "Greedy Matching",
-  "steps.greedyMatching.description": "Regex does a greedy match by default. This means that the matchmaking will be as long as possible. Check out the example below. It refers to any match that ends in `r` and can be any character preceded by it. But it does not stop at the first letter `r`.",
+  "steps.flagsMultiline.title": "多行标志",
+  "steps.flagsMultiline.description": "正则表达式将所有文本视作一行。但如果我们使用了多行标志，它就会单独处理每一行。这次，我们将根据每一行行末的规律来写出表达式，现在，请启用多行标志来查找所有匹配项。",
 
-  "steps.lazyMatching.title": "Lazy Matching",
-  "steps.lazyMatching.description": "Lazy matchmaking, unlike greedy matching, stops at the first matching. For example, in the example below, add a `?` after `*` to find the first match that ends with the letter `r` and is preceded by any character. It means that this match will stop at the first letter `r`.",
+  "steps.flagsCaseInsensitive.title": "忽略大小写标志",
+  "steps.flagsCaseInsensitive.description": "为了使我们编写的表达式不再大小写敏感，我们必须启用 `不区分大小写` 标志。",
 
-  "steps.completeAllSteps.title": "Congratulations, you have completed all the steps!",
-  "steps.completeAllSteps.description": "You can return to the previous steps whenever you want, and you can easily navigate through all the steps you have passed."
+  "steps.greedyMatching.title": "贪婪匹配",
+  "steps.greedyMatching.description": "正则表达式默认执行贪婪匹配。这意味着匹配内容会尽可能长。请看下面的示例，它匹配任何以 `r` 结尾的字符串，以及前面带有该字符串的文本，但它不会在第一个 `r` 处停止匹配。",
+
+  "steps.lazyMatching.title": "懒惰匹配",
+  "steps.lazyMatching.description": "与贪婪匹配不同，懒惰匹配在第一次匹配时停止。下面的例子中，在 `*` 之后添加 `?`，将查找以 `r` 结尾且前面带有任意字符的第一个匹配项。这意味着本次匹配将会在第一个字母 `r` 处停止。",
+
+  "steps.completeAllSteps.title": "恭喜，您已完成所有步骤！",
+  "steps.completeAllSteps.description": "您可以随时返回到前面的步骤，并且可以轻松浏览所有已通过的步骤。"
 }
