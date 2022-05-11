@@ -11,26 +11,29 @@ import FlagBox from 'src/components/FlagBox';
 import setCaretPosition from 'src/utils/setCaretPosition';
 import tagWrapper from 'src/utils/tagWrapper';
 import checkRegex from 'src/utils/checkRegex';
-import { LessonData } from 'src/types';
+import { Lesson, LessonData } from 'src/types';
 
 import styles from './InteractiveArea.module.css';
+import Icon from '../Icon';
 
 interface Props {
-  lessonName: string;
+  lesson: Lesson;
   data: LessonData;
   step: number;
   isShow?: boolean;
   parentError: boolean;
   onChangeSuccess: Function;
+  setIsOpenModal: Function;
 }
 
 const InteractiveArea = ({
-  lessonName,
+  lesson,
   data,
   step,
   isShow,
   parentError,
   onChangeSuccess,
+  setIsOpenModal,
 }: Props) => {
   const { formatMessage } = useIntl();
   const regexInput = useRef<HTMLInputElement>(null);
@@ -47,6 +50,15 @@ const InteractiveArea = ({
     setSuccess(true);
   };
 
+  const checkBrowserSupport = () => {
+    try {
+      checkRegex(data, { regex, flags });
+      return true;
+    } catch (error) {
+      return false;
+    }
+  };
+
   const applyRegex = () => {
     if (data.interactive === false) return;
 
@@ -54,34 +66,36 @@ const InteractiveArea = ({
       const isTrueRegex = data.regex[0] == regex;
       setError(!isTrueRegex);
       setSuccess(isTrueRegex);
-      return;
+
+      if (!checkBrowserSupport()) return;
     }
 
     const { isSuccess, isMatch, err, regex: grouppedRegex } = checkRegex(data, { regex, flags });
 
     if (err) {
       setError(Boolean(err));
+      return;
+    }
+
+    setMatch(isMatch);
+    setSuccess(isSuccess);
+
+    if (!regex) {
+      setContent(data.content);
     } else {
-      setMatch(isMatch);
-      setSuccess(isSuccess);
+      setContent(
+        tagWrapper({
+          value: data.content,
+          regex: grouppedRegex,
+          attributes: { class: styles.InteractiveAreaResultTag },
+        }),
+      );
+    }
 
-      if (!regex) {
-        setContent(data.content);
-      } else {
-        setContent(
-          tagWrapper({
-            value: data.content,
-            regex: grouppedRegex,
-            attributes: { class: styles.InteractiveAreaResultTag },
-          }),
-        );
-      }
-
-      if ((isChanged && isSuccess) || isMatch) {
-        setError(false);
-      } else {
-        setError(true);
-      }
+    if ((isChanged && isSuccess) || isMatch) {
+      setError(false);
+    } else {
+      setError(true);
     }
   };
 
@@ -108,7 +122,7 @@ const InteractiveArea = ({
 
     setSuccess(false);
 
-    const lastStep = lookie.get(`lesson.${lessonName}`)?.lastStep || 0;
+    const lastStep = lookie.get(`lesson.${lesson.key}`)?.lastStep || 0;
     const isCompletedStep = step < lastStep;
     const currentFlags = isCompletedStep ? data.flags : data.initialFlags;
     const currentRegex = isCompletedStep ? data.regex[0] : data.initialValue;
@@ -142,11 +156,11 @@ const InteractiveArea = ({
 
   useEventListener('keydown', handleFocus);
 
-  useEffect(applyRegex, [regex, flags, step, data, isChanged]);
+  useEffect(applyRegex, [regex, flags, step, data, isChanged, checkBrowserSupport]);
 
   if (!isShow) return null;
 
-  const highlightedContent = (content || data.content || '').replace(/\n/gm, '<br />');
+  const readableContent = (content || data.content || '').replace(/\n/gm, '<br />');
 
   const placeholder = formatMessage({
     id: 'general.regex',
@@ -169,15 +183,23 @@ const InteractiveArea = ({
       <div
         className={styles.InteractiveAreaBlockContent}
         data-title={formatMessage({ id: 'general.text' })}
-        dangerouslySetInnerHTML={{ __html: highlightedContent }}
+        dangerouslySetInnerHTML={{ __html: readableContent }}
       />
       <div
         className={styles.InteractiveAreaBlockRegex}
         data-title={formatMessage({ id: 'general.regex' })}
       >
         <ReportStep title={data.title} step={step} />
-        <Hint regex={data.regex} flags={data.flags} />
-        <div className={styles.InteractiveAreaInputWrapper} data-flags={flags}>
+
+        {!data.noHint && (
+          <Hint hiddenFlags={data.hiddenFlags} regex={data.regex} flags={data.flags} />
+        )}
+        <div
+          className={cx(styles.InteractiveAreaInputWrapper, {
+            [styles.InteractiveAreaHiddenFlags]: data.hiddenFlags,
+          })}
+          data-flags={flags}
+        >
           <input
             ref={regexInput}
             key={step}
@@ -185,12 +207,18 @@ const InteractiveArea = ({
             className={styles.InteractiveAreaInput}
             style={{ width: regex.length * 15 || 60 }}
             readOnly={data.readOnly}
-            value={regex}
+            value={data.visibleRegex || regex}
             onChange={onChange}
             placeholder={placeholder}
             spellCheck={false}
           />
         </div>
+        {data.videoURL && (
+          <div className={styles.WatchButton} onClick={() => setIsOpenModal(true)}>
+            <Icon icon="play" size={18} />
+            <FormattedMessage id="general.watch" />
+          </div>
+        )}
         {data.useFlagsControl && <FlagBox flags={flags} setFlags={handleChangeFlags} />}
       </div>
     </div>
