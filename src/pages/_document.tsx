@@ -7,22 +7,13 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {!isDevelopment && (
-            <>
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNDXNCMG6E" />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-ZNDXNCMG6E');
-            `,
-                }}
-              />
-            </>
-          )}
           <link rel="shortcut icon" href="/favicon.svg" />
+          <script
+            async
+            defer
+            data-website-id="23b28b3f-0abd-4946-b5c0-b239a80d111d"
+            src="https://sta.zdynb.cn/umami.js"
+          />
         </Head>
         <body>
           <Main />
