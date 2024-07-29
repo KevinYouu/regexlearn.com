@@ -1,22 +1,9 @@
 export const langNames = {
-  en: '🇸',
-  de: '🇩🇪',
-  es: '🇪🇸',
-  fr: '🇫🇷',
-  tr: '🇹🇷',
-  ru: '🇷🇺',
+  en: '🇺🇸',
   'zh-cn': '🇨🇳',
-  uk: '🇺🇦',
-  ka: '🇬🇪',
-  ko: '🇰🇷',
-  pl: '🇵🇱',
-  'pt-br': '🇧🇷',
-  'cs-cz': '🇨🇿',
-  fa: '🇮🇷',
-  it: '🇮🇹',
 };
 
-export const rtlSupported = ['fa'];
+export const rtlSupported = ['en'];
 
 export const defaultLocale = 'en';
 

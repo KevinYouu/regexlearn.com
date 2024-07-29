@@ -2,6 +2,8 @@
 
 module.exports = {
   reactStrictMode: true,
+  exportTrailingSlash: true,
+  outDir: 'out',
   async rewrites() {
     return [
       {
