@@ -4,7 +4,7 @@ Embark on an exciting journey to learn and master regular expressions with
 **[regexlearn.com](https://regexlearn.com/)**. Our engaging, step-by-step approach and feature-rich
 platform ensure a smooth learning experience that will have you writing regex like a pro in no time!
 
-## 使用 docker 部署
+<br>
 
 ## **🌟 Features**
 

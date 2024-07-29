@@ -21,19 +21,19 @@
   "general.shareLinkCopied": "Share link copied!",
   "general.somethingWentWrong": "Something went wrong!",
 
-  "notFound.intro": "您要寻找的页面不存在。",
-  "notFound.button": "回到主页",
+  "notFound.intro": "The page you are looking for does not exist.",
+  "notFound.button": "Back to home",
 
-  "page.landing.title": "Regex Learn - 逐步从零基础到高阶。",
-  "page.learn.title": "Regex Learn - 正则表达式交互式课程",
-  "page.cheatsheet.title": "Regex Learn - 正则表达式备忘单",
+  "page.landing.title": "Regex Learn - Step by step, from zero to advanced.",
+  "page.learn.title": "Regex Learn - Regex Interactive Course",
+  "page.cheatsheet.title": "Regex Learn - Regex Cheatsheet",
   "page.playground.title": "Regex Learn - Playground",
-  "page.404.title": "Regex Learn - 未找到",
+  "page.404.title": "Regex Learn - Not Found",
 
-  "page.landing.description": "交互式学习正则表达式，在您所处的阶段练习、测试和分享您自己的正则表达式。",
-  "page.learn.description": "逐步学习正则表达式。完成交互式课程会让您的学习更加简单和快速。",
-  "page.cheatsheet.description": "有时您只需记住正则表达式。试试备忘单，它可以让您更好地理解和掌握它们。",
-  "page.playground.description": "您可以通过 Playground 在线轻松构建和测试您的正则表达式模式。",
+  "page.landing.description": "Learn Regex interactively, practice at your level, test and share your own Regex.",
+  "page.learn.description": "Learn Regex step by step. Complete the interactive tutorial that will make your learning easier and faster.",
+  "page.cheatsheet.description": "Sometimes you just need to remember Regex. Try the cheatsheet that will make it easier for you to understand and remember better.",
+  "page.playground.description": "You can easily build and test your regex pattern online via Playground.",
 
   "learn.safari.unsupportWarning": "Regex in this step is not supported by some browsers. If you have trouble getting past this step, click here."
 }

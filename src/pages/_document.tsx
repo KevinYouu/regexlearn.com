@@ -30,12 +30,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           />
 
           <link rel="shortcut icon" href="/favicon.svg" />
-          <script
-            async
-            defer
-            data-website-id="23b28b3f-0abd-4946-b5c0-b239a80d111d"
-            src="https://sta.zdynb.cn/umami.js"
-          />
         </Head>
         <body>
           <Main />
