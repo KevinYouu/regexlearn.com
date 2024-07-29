@@ -14,8 +14,8 @@
   "steps.basicMatchers.title": "基本匹配",
   "steps.basicMatchers.description": "我们想要查找的字符或单词可以直接输入，就像搜索一样。例如，要找出文本中的 `curious` 一词，只需输入同样的内容。",
 
-  "steps.dotCharacter.title": "点 `.`：任何字符",
-  "steps.dotCharacter.description": "`.` 允许匹配任何字符，包括特殊字符和空格。",
+  "steps.dotCharacter.title": "Dot `.`: Any Character",
+  "steps.dotCharacter.description": "The period `.` allows selecting any character, including special characters and spaces. Type a period `.` in the Regex field to proceed.",
 
   "steps.characterSet.title": "字符集 `[abc]`",
   "steps.characterSet.description": "如果一个词中的字符可以是各种字符，我们就将所有的可选字符写进中括号 `[]` 中。例如，为了查找文本中的所有单词，我们需要编写表达式，在 `[]` 中相邻地输入字符 `a`、`e`、`i`、`o`、`u`。",
@@ -59,14 +59,14 @@
   "steps.questionMark.title": "问号 `?`",
   "steps.questionMark.description": "为了表示一个字符是可选的，我们在它后面加一个 `?`。例如，表示下方文本中的字母 `u` 是可选的。",
 
-  "steps.quantifier.title": "大括号 - 1",
-  "steps.quantifier.description": "为了表示一个字符出现的确切次数，我们在该字符的末尾，将它出现的次数写进大括号 `{}` 中，如 `{n}`。例如，表示下方文本中的字母 `e` 只能出现 `2` 次。",
+  "steps.quantifier.title": "Curly Braces - 1",
+  "steps.quantifier.description": "To express a certain number of occurrences of a character,  at the end we write curly braces `{n}` along with how many times we want it to occur. For example, indicate that the following letter `e` can occur only `2` times in a row.",
 
-  "steps.quantifierMin.title": "大括号 - 2",
-  "steps.quantifierMin.description": "为了表示一个字符至少出现多少次，我们在该字符的末尾，将它至少应出现的次数写进大括号 `{}` 中，并在数字后面加上逗号 `,`，如 `{n, }`。例如，表示下方文本中的字母 `e` 至少出现 `3` 次。",
+  "steps.quantifierMin.title": "Curly Braces - 2",
+  "steps.quantifierMin.description": "To express at least a certain number of occurrences of a character, immediately after the character we write at least how many times we want it to occur in a row followed by a comma `,` and wrapped inside curly braces `{n, }`. For example, indicate that the following letter `e` can occur at least `3` times in a row.",
 
-  "steps.quantifierRange.title": "大括号 - 3",
-  "steps.quantifierRange.description": "为了表示一些字符出现的次数在某个数字范围内，我们在该字符的末尾，将它至少和至多出现的次数写进大括号 `{}` 中，中间用逗号 `,` 分隔，如 `{x,y}`。例如，匹配下方文本中，字母 `e` 出现 `1` 至 `3` 次的单词。",
+  "steps.quantifierRange.title": "Curly Braces - 3",
+  "steps.quantifierRange.description": "To express the occurrence of a character in a certain number range, we write curly braces `{x,y}` for the inclusive interval. For example, indicate that the following letter `e` can only occur between `1` and `3` times in a row.",
 
   "examples.asterisk.title": "练习：星号 `*`",
   "examples.asterisk.description": "请编写表达式，用 `*` 匹配下方文本中，没有或存在多个字母 `e` 的单词。",
@@ -77,8 +77,8 @@
   "examples.questionMark.title": "练习：问号 `?`",
   "examples.questionMark.description": "请编写表达式，用 `?` 表示字母 `n` 在文本中是可选的，使 `a` 和 `an` 都可以匹配到。",
 
-  "examples.quantifier.title": "练习：大括号 - 1",
-  "examples.quantifier.description": "用 `{}` 编写表达式，匹配文本中的 `4` 位阿拉伯数字。",
+  "examples.quantifier.title": "Practice: Curly Braces - 1",
+  "examples.quantifier.description": "Write the expression using curly braces `{}` that will find texts containing `4` numbers side by side. Remember that the range `[0-9]` will match a single digit.",
 
   "examples.quantifierMin.title": "练习：大括号 - 2",
   "examples.quantifierMin.description": "用 `{}` 编写表达式，匹配文本中，位数至少为 `2` 的阿拉伯数字。",
@@ -86,17 +86,17 @@
   "examples.quantifierRange.title": "练习：大括号 - 3",
   "examples.quantifierRange.description": "用 `{}` 编写表达式，匹配文本中，位数为 `1` 至 `4` 的阿拉伯数字。",
 
-  "steps.groupping.title": "括号 `( )`: 分组",
-  "steps.groupping.description": "我们可以对一个表达式进行分组，并用这些分组来引用或执行一些规则。为了给表达式分组，我们需要将文本包裹在 `()` 中。现在，请尝试为下方文本中的 `haa` 构造分组。",
+  "steps.grouping.title": "Parentheses `( )`: Grouping",
+  "steps.grouping.description": "We can group an expression and use these groups to reference or enforce some rules. To group an expression, we enclose `()` in parentheses. For now just group `haa` below.",
 
   "steps.groupReference.title": "引用组",
   "steps.groupReference.description": "单词 `ha` 和 `haa` 分组如下。第一组用 `\\1` 来避免重复书写。这里的 `1` 表示分组的顺序。请在表达式的末尾键入 `\\2` 以引用第二组。",
 
-  "steps.nonCapturingGroupping.title": "括号 `(?: )`: 非捕获分组",
-  "steps.nonCapturingGroupping.description": "您可以对表达式进行分组，并确保它不被引用捕获。例如，下面有两个分组，但我们用 `\\1` 引用的第一个组实际上是指向第二个组，因为第一个是未被捕获的分组。",
+  "steps.nonCapturingGrouping.title": "Parentheses `(?: )`: Non-capturing Grouping",
+  "steps.nonCapturingGrouping.description": "You can group an expression and ensure that it is not captured by references. For example, below are two groups. However, the first group reference we denote with `\\1` actually indicates the second group, as the first is a non-capturing group.",
 
-  "steps.pipeCharacter.title": "竖线 `|`",
-  "steps.pipeCharacter.description": "竖线允许一个表达式包含多个不同的分支。所有分支用 `|` 分隔。和在字符层面上运作的字符集 `[abc]` 不同，分支在表达式层面上运作。例如，下面的表达式同时匹配 `cat` 和 `Cat`。请在末尾添加另一个 `|`，并输入 `rat` 以匹配所有单词。",
+  "steps.pipeCharacter.title": "Pipe Character `|`",
+  "steps.pipeCharacter.description": "It allows to specify that an expression can be in different expressions. Thus, all possible statements are written separated by the pipe sign `|`. This differs from charset `[abc]`, charsets operate at the character level. Alternatives are at the expression level. For example, the following expression would select both `cat` and `rat`. Add another pipe sign `|` to the end of the expression and type `dog` so that all words are selected.",
 
   "steps.escapeCharacter.title": "转义字符 `\\`",
   "steps.escapeCharacter.description": "在书写正则表达式时，我们会用到 `{ } [ ] / \\ + * . $^ | ?` 这些特殊字符 。为了匹配这些特殊字符本身，我们需要通过 `\\` 将它们转义。例如，要匹配文本中的 `.` 和 `*`，我们需要在它们前面添加一个 `\\`。",
@@ -131,23 +131,29 @@
   "steps.positiveLookahead.title": "正向先行断言: `(?=)`",
   "steps.positiveLookahead.description": "例如，我们要匹配文本中的小时值。为了只匹配后面有 `PM` 的数值，我们需要在表达式后面使用正向先行断言 `(?=)`，并在括号内的 `=` 后面添加 `PM`。",
 
-  "steps.negativeLookahead.title": "负向先行断言: `(?!)`",
-  "steps.negativeLookahead.description": "例如，我们要在文本中匹配除小时值以外的数字。我们需要在表达式后面使用负向先行断言 `(?!)`，并在括号内的 `!` 后面添加 `PM`，从而只匹配没有 `PM` 的数值。",
+  "steps.negativeLookahead.title": "Negative Lookahead: `(?!)`",
+  "steps.negativeLookahead.description": "For example, we want to select numbers other than the hour value in the text. Therefore, we need to write the negative look-ahead `(?!)` expression after our expression to select only the numerical values that do not have `PM` after them. Include `PM` after the `!` sign inside the parentheses.",
 
-  "steps.positiveLookbehind.title": "正向后行断言: `(?<=)`",
-  "steps.positiveLookbehind.description": "例如，我们要匹配文本中的金额数。为了只匹配前面带有 `$` 的数字。我们要在表达式前面使用正向后行断言 `(?<=)`，并在括号内的 `=` 后面添加 `\\$`。",
+  "steps.positiveLookbehind.title": "Positive Lookbehind: `(?<=)`",
+  "steps.positiveLookbehind.description": "For example, we want to select the price value in the text. Therefore, to select only the number values that are preceded by `$`, we need to write the positive lookbehind expression `(?<=)` before our expression. Add `\\$` after the `=` sign inside the parenthesis.",
 
-  "steps.negativeLookbehind.title": "负向后行断言: `(?&lt;!)`",
-  "steps.negativeLookbehind.description": "例如，我们要在文本中匹配除价格外的数字。为了只匹配前面没有 `$` 的数字，我们要在表达式前用负向后行断言 `(?&lt;!)`，并在括号内的 `!` 后面添加 `\\$`。",
+  "steps.negativeLookbehind.title": "Negative Lookbehind: `(?&lt;!)`",
+  "steps.negativeLookbehind.description": "For example, we want to select numbers in the text other than the price value. Therefore, to select only numeric values that are not preceded by `$`, we need to write the negative lookbehind `(?&lt;!)` before our expression. Add `\\$` after the `!` inside the parenthesis.",
+
+  "steps.flags.title": "Flags",
+  "steps.flags.description": "Flags change the output of the expression. That's why flags are also called `modifiers`. Flags determine whether the typed expression treats text as separate lines, is case sensitive, or finds all matches. Continue to the next step to learn the flags.",
 
   "steps.flags.title": "标志",
   "steps.flags.description": "标志改变表达式的输出。这就是标志也称为 `修饰符` 的原因。标志决定表达式是否将文本视作单独的行处理，是否区分大小写，或者是否查找所有匹配项。请继续下一步步骤以学习标志。",
 
-  "steps.flagsGlobal.title": "全局标志",
-  "steps.flagsGlobal.description": "全局标志使表达式选中所有匹配项，如果不启用全局标志，那么表达式只会匹配第一个匹配项。现在，请启用全局标志，以便匹配所有匹配项。",
+  "steps.flagsMultiline.title": "Multiline Flag",
+  "steps.flagsMultiline.description": "Regex sees all text as one line. But we use the `multiline` flag to handle each line separately. In this way, the expressions we write to identify patterns at the end of lines work separately for each line. Now enable the `multiline` flag to find all matches.",
 
-  "steps.flagsMultiline.title": "多行标志",
-  "steps.flagsMultiline.description": "正则表达式将所有文本视作一行。但如果我们使用了多行标志，它就会单独处理每一行。这次，我们将根据每一行行末的规律来写出表达式，现在，请启用多行标志来查找所有匹配项。",
+  "steps.flagsCaseInsensitive.title": "Case-insensitive Flag",
+  "steps.flagsCaseInsensitive.description": "In order to remove the case-sensitivity of the expression we have written, we must activate the `case-insensitive` flag.",
+
+  "steps.greedyMatching.title": "Greedy Matching",
+  "steps.greedyMatching.description": "Regex does a greedy match by default. This means that the matchmaking will be as long as possible. Check out the example below. It refers to any match that ends in `r` and can be any character preceded by it. But it does not stop at the first letter `r`.",
 
   "steps.flagsCaseInsensitive.title": "忽略大小写标志",
   "steps.flagsCaseInsensitive.description": "为了使我们编写的表达式不再大小写敏感，我们必须启用 `不区分大小写` 标志。",

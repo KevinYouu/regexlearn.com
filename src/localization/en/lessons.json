@@ -1,7 +1,7 @@
 {
-  "lessons.regex101.title": "Regex 101",
-  "lessons.regex101.description": "您可以在本教程中学习 Regex 的基础知识。 ",
+  "lessons.regex101.title": "Regex 101 - EN",
+  "lessons.regex101.description": "You can learn the basics of Regex in this tutorial.",
 
-  "lessons.regexForSeo.title": "搜索引擎优化正则表达式",
-  "lessons.regexForSeo.description": "在本教程中，您可以学习如何以及在何处使用正则表达式进行SEO"
+  "lessons.regexForSeo.title": "Regex for SEO - EN",
+  "lessons.regexForSeo.description": "In this tutorial, you can learn how and where you can use Regex for SEO."
 }

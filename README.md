@@ -1,31 +1,84 @@
-这是一个让学习如何编写正则表达式变得容易的项目。
+# **🔓 [regexlearn.com](http://regexlearn.com/): Unlock the Secrets of Regex**
 
-## 支持功能
-
-- **渐进学习**
-- **互动**
-- **快捷方式友好**
-- **备忘单**
-- **游乐场**
-
-## 使用方法
-
-```bash
-npm install
-
-# 本地开发使用
-npm run dev # 启动开发模式
-
-# 放在服务器使用
-npm run build # 编译静态文件
-npm run start # 启动服务器运行静态文件
-```
+Embark on an exciting journey to learn and master regular expressions with
+**[regexlearn.com](https://regexlearn.com/)**. Our engaging, step-by-step approach and feature-rich
+platform ensure a smooth learning experience that will have you writing regex like a pro in no time!
 
 ## 使用 docker 部署
 
-```bash
-# 构建镜像
-docker build -t reg .
-# 启动镜像，映射本地3400端口，启动完成访问localhost:3400即可访问
-docker run -d -p 3400:3000 --name reg reg
-```
+## **🌟 Features**
+
+- **🚶 Step-by-Step Learning:** Progress through thoughtfully crafted lessons and examples at your
+  own pace, catering to both beginners and experienced users.
+- **🎓 Interactive:** Immerse yourself in hands-on activities to reinforce your understanding and
+  boost retention.
+- **🚀 Shortcut Friendly:** Uncover valuable shortcuts and tips that will streamline and optimize
+  your regex-writing process.
+- **📚 Cheatsheet:** Keep a handy, concise summary of regex syntax and usage at your fingertips for
+  quick reference.
+- **🔬 Playground:** Freely experiment and test your regex patterns in a dedicated sandbox
+  environment without limitations.
+- **💡 Practice:** Coming soon - Challenge yourself with a wide range of practical exercises to
+  refine and enhance your regex skills.
+
+<br>
+
+## **🌍 Supported Languages**
+
+**[regexlearn.com](http://regexlearn.com/)** is available in the following languages, with more on
+the way:
+
+- 🇺🇸 English
+- 🇹🇷 Turkish
+- 🇷🇺 Russian
+- 🇪🇸 Spanish
+- 🇨🇳 Chinese
+- 🇩🇪 German
+- 🇺🇦 Ukrainian
+- 🇫🇷 French
+- 🇵🇱 Polish
+- 🇰🇷 Korean
+- 🇧🇷 Brazilian Portuguese
+- 🇨🇿 Czech
+- 🇬🇪 Georgian
+- 🇮🇷 Persian
+- 🇮🇹 Italian
+
+### Requested Translations
+
+- 🇦🇪 Arabic [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/163)
+- 🇧🇩 Bengali [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/304)
+- 🇻🇳 Vietnamese [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/329)
+- 🇮🇩 Indonesian [(Issue)](https://github.com/aykutkardas/regexlearn.com/issues/335)
+
+Interested in adding your language? Please
+**[create an issue](https://github.com/aykutkardas/regexlearn.com/issues/new)** and let us know!
+
+<br>
+
+## Our Sponsors
+
+[![Ahrefs](preview/ahrefs.png)](https://ahrefs.com/) [![Wope](preview/wope.png)](https://wope.com)
+
+<br>
+
+## **💖 Sponsorship**
+
+This project is a labor of love, developed as open-source during our free time. If you'd like to
+support our mission and be featured as a sponsor, please
+**[contact us](mailto:aykutkrds@gmail.com)**. Your generous contribution allows us to continue
+enhancing regexlearn.com, fostering growth and learning within the community.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aykutkardas)
+
+<br>
+
+## Preview
+
+![Preview](preview/preview-landing.png)
+
+![Preview](preview/preview-learn.png)
+
+![Preview](preview/preview-cheatsheet.png)
+
+<br>
