@@ -8,13 +8,11 @@ class MyDocument extends Document {
       <Html lang="en" className="dark">
         <Head>
           {!isDevelopment && (
-            <>
-              <script
-                defer
-                src="https://stats.kevnu.com/script.js"
-                data-website-id="23b28b3f-0abd-4946-b5c0-b239a80d111d"
-              ></script>
-            </>
+            <script
+              defer
+              src="https://stats.kevnu.com/script.js"
+              data-website-id="23b28b3f-0abd-4946-b5c0-b239a80d111d"
+            />
           )}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
