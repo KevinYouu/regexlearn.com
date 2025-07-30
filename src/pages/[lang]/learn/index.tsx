@@ -4,7 +4,6 @@ import { useIntl, FormattedMessage } from 'react-intl';
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
 import LessonBox from 'src/components/LessonBox';
-import SupportButton from 'src/components/SupportButton';
 import HighlightedText from 'src/components/HighlightedText';
 import { defaultLocale, locales } from 'src/localization';
 import globalIntl from 'src/utils/globalIntl';
@@ -65,7 +64,6 @@ const PageLearn = () => {
           </div>
         </div>
       </div>
-      <SupportButton />
       <Footer />
     </div>
   );
