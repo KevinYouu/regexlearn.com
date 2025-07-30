@@ -3,7 +3,7 @@ export const langNames = {
   'zh-cn': '🇨🇳',
 };
 
-export const rtlSupported = ['en'];
+export const rtlSupported = ['fa', 'ar'];
 
 export const defaultLocale = 'en';
 
